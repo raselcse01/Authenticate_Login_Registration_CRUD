@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registion pages </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-8 pt-4 m-3">
+                <h1 class="alert alert-success text-center mt-3 mb-3">Registion of user </h1>
+                <form method="POST">
+                   {% csrf_token %} 
+                    <div class="form-group">
+                      <label for="First_name">First_name</label>
+                      <input type="text" class="form-control" id="First_name" placeholder="Enter frist_name" name="frist_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">last_name</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Enter last_name" name="last_name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="username">username</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Enter last_name" name="username">
+                      </div> 
+
+                      <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="Email" placeholder="Enter Email" name="Email">
+                      </div> 
+
+
+                    <div class="form-group">
+                      <label for="Password1">Password</label>
+                      <input type="password" class="form-control" id="Password1" placeholder="Password" name="Password1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Password2"> conforim Password</label>
+                        <input type="password" class="form-control" id="Password2" placeholder=" conforim Password" name="Password2">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
